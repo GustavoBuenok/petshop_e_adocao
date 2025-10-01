@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Amigo - Petshop Patas & Pelos</title>
+    <link rel="icon" href="img/treats.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="logo">Petshop Patas & Pelos</h1>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="aula12/index.html">Início</a></li>
+                    <li><a href="adocao.html">Adoção</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="text-center">
+            <h1>Adote um Amigo</h1>
+            <p class="subtitulo">Abra seu coração e seu lar para um novo companheiro. Eles estão esperando por você!</p>
+        </div>
+
+        <section id="grid-adocao" class="grid-adocao">
+
+            <ul id="lista-adocao" class="grid-adocao"></ul>
+        </section>
+
+        <section class="faq-section mt-5">
+            <div class="text-center">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+
+            <div class="accordion" id="faq-petshop">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-um">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-um" aria-expanded="true" aria-controls="collapse-um">
+                            Quais são os pré requisitos para adoção?
+                        </button>
+                    </h2>
+                    <div id="collapse-um" class="accordion-collapse collapse show" aria-labelledby="heading-um"
+                        data-bs-parent="#faq-petshop">
+                        <div class="accordion-body">
+                            Para adotar um gato, é preciso ter 18 anos, oferecer um lar seguro e assumir os cuidados
+                            básicos. O adotante deve concordar com visitas de acompanhamento e se comprometer com a
+                            castração. É obrigatório assinar um termo de responsabilidade.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-dois">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-dois" aria-expanded="false" aria-controls="collapse-dois">
+                            Dicas para adoção!
+                        </button>
+                    </h2>
+                    <div id="collapse-dois" class="accordion-collapse collapse" aria-labelledby="heading-dois"
+                        data-bs-parent="#faq-petshop">
+                        <div class="accordion-body">
+                            Antes de adotar, avalie se você tem tempo, espaço e recursos para cuidar do gato, oferecendo
+                            um ambiente seguro e acolhedor. Respeite o tempo de adaptação e priorize a castração para o
+                            bem-estar dele. Informe-se sobre o animal e a instituição para garantir uma adoção
+                            consciente e responsável.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-tres">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-tres" aria-expanded="false" aria-controls="collapse-tres">
+                                Porque adotar ?
+                            </button>
+                        </h2>
+                        <div id="collapse-tres" class="accordion-collapse collapse" aria-labelledby="heading-tres"
+                            data-bs-parent="#faq-petshop">
+                            <div class="accordion-body">
+                                Adotar é um ato de amor que oferece uma nova chance a animais que já sofreram abandono.
+                                Você salva uma vida e ganha um companheiro leal e carinhoso. A adoção também ajuda a
+                                combater o abandono e o comércio ilegal de animais. Gatos adotados são gratos e enchem a
+                                casa de afeto. Ao adotar, você transforma duas vidas: a do animal e a sua.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Quero Adotar!</h2>
+
+            <form id="form-adocao" novalidate>
+                <div class="form-group">
+                    <label for="nome-interessado">Seu Nome Completo:</label>
+                    <input type="text" id="nome-interessado" placeholder="Ex: Ana da Silva">
+                    <small class="mensagem-erro" id="msg-erro-nome"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email-interessado">Seu E-mail:</label>
+                    <input type="email" id="email-interessado" placeholder="Ex: seuemail@email.com">
+                    <small class="mensagem-erro" id="msg-erro-email"></small>
+                </div>
+                <div class="form-group">
+                    <label for="pet-interesse">Nome do Pet de Interesse:</label>
+                    <input type="text" id="pet-interesse" placeholder="Ex: Rex">
+                    <small class="mensagem-erro" id="msg-erro-pet"></small>
+                </div>
+                <button type="submit" class="botao">Enviar Interesse</button>
+            </form>
+        </section>
+    </main>
+    <dialog id="feedback-dialog">
+        <div class="dialog-cabecalho">
+            <h2 id="dialog-titulo">Dados enviados com sucesso!</h2>
+            <button id="btn-fechar" class="btn-fechar">&times;</button>
+        </div>
+        <div class="dialog-corpo">
+            <p id="dialog-mensagem"></p>
+        </div>
+    </dialog>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="enhance.js"></script>
+</body>
+
+</html>
