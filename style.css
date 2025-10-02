@@ -15,6 +15,12 @@ body {
     background: var(--background-gradient);
     color: var(--text-dark);
 }
+
+.link-pagina:hover {
+    color: var(--petz-green);
+    transition: color 0.2s ease;
+}
+
  
 .container {
     max-width: 1200px;
@@ -60,6 +66,7 @@ body {
 h1 {
     color: var(--petz-green);
     text-align: center;
+    font-weight: 700;
 }
  
 .subtitulo {
@@ -96,6 +103,7 @@ h1 {
 .pet-info h3 {
     margin: 0 0 10px 0;
     color: var(--petz-green);
+    font-weight: 700;
 }
  
 .form-section {

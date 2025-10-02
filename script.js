@@ -28,11 +28,13 @@ function criarHtmlParaAdocao(lista) {
     let htmlParaInserir = "";
     for (let i = 0; i < lista.length; i++) {
         htmlParaInserir += `
-            <li class="pet-card">
+             <li class="pet-card">
                 <img src= ${imagens[i]}>   
-                <h3 class="pet-info">${lista[i]}</h3>
-                <p class="pet-info"><b>Idade:</b> ${idade[i]} ano(s)</p>
-                <p class="pet-info">${descricao[i]}</p>
+                <div class="pet-info">
+                <h3>${lista[i]}</h3>
+                <p><b>Idade:</b> ${idade[i]} ano(s)</p>
+                <p>${descricao[i]}</p>
+                </div>
             </li>
         `;
     }
