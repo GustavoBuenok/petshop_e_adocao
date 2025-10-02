@@ -21,7 +21,7 @@ const imagens = [
     'img/foto-Mel.jpg',
     'img/foto-Leon.jpg',
     'img/foto-nuvem.jpg',
-    'img/foto-tom.jpg'
+    'img/foto-Tom.jpg'
 ];
 
 function criarHtmlParaAdocao(lista) {
